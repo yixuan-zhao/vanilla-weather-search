@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Vanilla Weather APP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="weather-app">
+          <img
+            src="https://www.weather.shecodes.io/images/logo.png"
+            alt="logo"
+            width="150px"
+          />
+          <form id="search-form" class="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="text"
+                  placeholder="Type a city..."
+                  id="city-input"
+                  class="form-control search-input"
+                  autofocus="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  id="search-city"
+                  value="Search"
+                  class="form-control btn btn-primary"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="weatherInfo">
+            <div class="row">
+              <div class="col-6">
+                <h1>Paris</h1>
+                <ul>
+                  <li>Wednesday 11:06, light rain</li>
+                  <li>Humidity: 89%, Wind: 1km/h</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <img src="" alt="" />
+                <span class="temperature">7</span>
+                <span class="unit">°C</span>
+              </div>
+            </div>
+            <div class="weekly-weather">
+              <div class="row">
+                <div class="col">Wed</div>
+                <div class="col">Thu</div>
+                <div class="col">Fri</div>
+                <div class="col">Sat</div>
+                <div class="col">Sun</div>
+              </div>
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+              <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          This project was coded by Yixuan Zhao and is open-sourced on GitHub
+          and hosted on Netlify
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
