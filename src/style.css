@@ -139,3 +139,7 @@ img {
   line-height: 18px;
   text-align: center;
 }
+
+.description{
+  text-transform: capitalize;
+}

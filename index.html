@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Vanilla Weather APP</title>
   </head>
   <body>
@@ -26,7 +27,7 @@
             <div class="row">
               <div class="col-9">
                 <input
-                  type="text"
+                  type="search"
                   placeholder="Type a city..."
                   id="city-input"
                   class="form-control search-input"
@@ -40,6 +41,7 @@
                   id="search-city"
                   value="Search"
                   class="form-control btn btn-primary"
+                  autocomplete="off"
                 />
               </div>
             </div>
@@ -49,20 +51,24 @@
               <div class="col-6">
                 <h1>Paris</h1>
                 <ul>
-                  <li>Wednesday 11:06, light rain</li>
                   <li>
-                    Humidity: <span class="humidity" id="humidity">89%</span>, Wind:
-                    <span class="wind" id="wind">1</span>km/h
+                    <span class="date" id="date">Wednesday 11:06</span>,
+                    <span class="description" id="description">light rain</span>
+                  </li>
+                  <li>
+                    Humidity: <span class="humidity" id="humidity">89</span>%,
+                    Wind: <span class="wind" id="wind">1</span> km/h
                   </li>
                 </ul>
               </div>
               <div class="col-6 today-temp">
                 <img
+                  id="icon-today"
                   src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
                   alt=""
                 />
                 <span class="temp-show">
-                  <span class="temperature">7</span>
+                  <span class="temperature" id="temperature">7</span>
                   <span class="unit" id="celsus">°C</span>
                   <span class="unit"> | </span>
                   <span class="unit" id="fahrenheit">°F</span>
@@ -139,7 +145,11 @@
           <a href="https://github.com/yixuan-zhao/vanilla-weather-search"
             >open-sourced</a
           >
-          on GitHub and hosted on Netlify
+          on GitHub and hosted on
+          <a
+            href="https://63773d1bb6f19b17c6951caa--serene-toffee-7503e9.netlify.app/"
+            >Netlify</a
+          >
         </div>
       </div>
     </div>
